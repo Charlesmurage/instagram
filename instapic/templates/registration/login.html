@@ -2,14 +2,16 @@
 {% load bootstrap4 %}
 
 {% block content %}
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <div class="container">
+        <div class="w3-panel w3-white w3-card-4">
+                <img src="https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fblogs-images.forbes.com%2Fgordonkelly%2Ffiles%2F2017%2F08%2FDIlG3rqXkAAOazn-1.jpg" class="w3-round" alt="Norway">
     <div class="row sign-up">
         <div class="col-md-4">
             {% if form.errors %}
             <p class="small">Password or Username is incorrect</p>
             {% endif %}
             <div class="section">
-                <h1>Insta</h1>
                 <div class="form-section">
                     <form action="/accounts/login/" method="POST">
                         {% csrf_token %}
@@ -23,6 +25,7 @@
             </div>
             <div class="section">
                 <p>Don't have an account? <a href="/accounts/register">Sign-Up</a></p>
+            </div>
             </div>
         </div>
     </div>

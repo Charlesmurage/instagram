@@ -1,13 +1,13 @@
 <nav class="navbar navbar-expand-lg" id="navMain">
     <div class="container">
-        <a class="" href="/"><i class="fa fa-instagram"style="font-size:30px;color:black" ></i></a>
+        <a class="" href="/"><i class="fa fa-instagram"style="font-size:30px;color:blue" ></i></a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
             aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <i class="fa fa-bars"></i>
         </button>
+        <h3 style="billabong">Instagram</h3>
         {% if user.is_authenticated %}
-        <a class="nav-link open-nav" href="{% url 'upload_image'%}">
-            <i class="fa fa-upload" style="font-size: 30px;color: black"></i>Upload</a>
+        
         {%endif%}
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <div class="container-fluid">
@@ -22,13 +22,15 @@
             </div>
             {%endif%}
 
-            <ul class="navbar-nav ml-auto" style="list-style: none">
+            <ul class="navbar-nav ml-auto" style="list-style: ">
                 <li class="nav-item">
                     {% if user.is_authenticated %}
                     <a class="nav-link open-nav" href="{% url 'showprofile' id=user.id %}"><i class="fa fa-user" style="font-size:30px;color:black">{{user}}</i></a>
                 </li>
 
             </ul>
+            <a class="nav-link open-nav" href="{% url 'upload_image'%}">
+                <i class="fa fa-upload" style="font-size: 30px;color: black"></i>Upload</a>
 
             <ul  class="navbar-nav ml-auto" style="list-style: none">
                    <li>

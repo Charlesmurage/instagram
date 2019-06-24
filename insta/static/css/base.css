@@ -102,7 +102,7 @@ a:hover {
 }
 
 .profile-image img {
-    border-radius: 15rem;
+    border-radius: 2rem;
 }
 
 .user-images img {
@@ -130,6 +130,7 @@ a:hover {
 
 .fa {
     color: black;
+    font-family: bill
 }
 
 .edit-profile {
@@ -188,4 +189,7 @@ p{
 }
 .font2{
     font-family: 'Julius Sans One';
+}
+.h3{
+    font-family: 'Billabong';
 }
